@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_game_play"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_Top"
+            android:layout_width="160dp"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/ic_avatar" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_avatar" />
+
+            <TextView
+                android:id="@+id/txv_heart"
+                style="@android:style/TextAppearance.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_heart"
+                android:gravity="center"
+                android:text="5"
+                android:textColor="#FFF"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txv_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bg_coin"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:text="10000"
+            android:textColor="#FFF" />
+
+        <Button
+            android:id="@+id/btn_cautiep"
+            style="@android:style/TextAppearance.Large"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bg_next"
+            android:text="Câu tiếp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <ImageView
+            android:id="@+id/imgv_picture"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/canthiep"
+            android:scaleType="centerCrop"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/bg_picture_border"
+            android:scaleType="centerCrop"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_Answer_1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp">
+        <com.vuongthanh.t3h.baitap_buoi7_gamedhbc.CustomButton
+            android:id="@+id/btn_Ans1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="gone"/>
+        <com.vuongthanh.t3h.baitap_buoi7_gamedhbc.CustomButton
+            android:id="@+id/btn_Ans2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="gone"/>
+        <com.vuongthanh.t3h.baitap_buoi7_gamedhbc.CustomButton
+            android:id="@+id/btn_Ans3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="gone"/>
+        <com.vuongthanh.t3h.baitap_buoi7_gamedhbc.CustomButton
+            android:id="@+id/btn_Ans4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="gone"/>
+        <com.vuongthanh.t3h.baitap_buoi7_gamedhbc.CustomButton
+            android:id="@+id/btn_Ans5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="gone"/>
+        <com.vuongthanh.t3h.baitap_buoi7_gamedhbc.CustomButton
+            android:id="@+id/btn_Ans6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="gone"/>
+        <com.vuongthanh.t3h.baitap_buoi7_gamedhbc.CustomButton
+            android:id="@+id/btn_Ans7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="gone"/>
+        <com.vuongthanh.t3h.baitap_buoi7_gamedhbc.CustomButton
+            android:id="@+id/btn_Ans8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="gone"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_Answer_2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <com.vuongthanh.t3h.baitap_buoi7_gamedhbc.CustomButton
+            android:id="@+id/btn_Ans9"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="gone"/>
+        <com.vuongthanh.t3h.baitap_buoi7_gamedhbc.CustomButton
+            android:id="@+id/btn_Ans10"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="gone"/>
+        <com.vuongthanh.t3h.baitap_buoi7_gamedhbc.CustomButton
+            android:id="@+id/btn_Ans11"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="gone"/>
+        <com.vuongthanh.t3h.baitap_buoi7_gamedhbc.CustomButton
+            android:id="@+id/btn_Ans12"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="gone"/>
+        <com.vuongthanh.t3h.baitap_buoi7_gamedhbc.CustomButton
+            android:id="@+id/btn_Ans13"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="gone"/>
+        <com.vuongthanh.t3h.baitap_buoi7_gamedhbc.CustomButton
+            android:id="@+id/btn_Ans14"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="gone"/>
+        <com.vuongthanh.t3h.baitap_buoi7_gamedhbc.CustomButton
+            android:id="@+id/btn_Ans15"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="gone"/>
+        <com.vuongthanh.t3h.baitap_buoi7_gamedhbc.CustomButton
+            android:id="@+id/btn_Ans16"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout_Hint_1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp">
+        <com.vuongthanh.t3h.baitap_buoi7_gamedhbc.CustomButton
+            android:id="@+id/btn_Hint1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="gone"/>
+        <com.vuongthanh.t3h.baitap_buoi7_gamedhbc.CustomButton
+            android:id="@+id/btn_Hint2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="gone"/>
+        <com.vuongthanh.t3h.baitap_buoi7_gamedhbc.CustomButton
+            android:id="@+id/btn_Hint3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="gone"/>
+        <com.vuongthanh.t3h.baitap_buoi7_gamedhbc.CustomButton
+            android:id="@+id/btn_Hint4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="gone"/>
+        <com.vuongthanh.t3h.baitap_buoi7_gamedhbc.CustomButton
+            android:id="@+id/btn_Hint5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="gone"/>
+        <com.vuongthanh.t3h.baitap_buoi7_gamedhbc.CustomButton
+            android:id="@+id/btn_Hint6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="gone"/>
+        <com.vuongthanh.t3h.baitap_buoi7_gamedhbc.CustomButton
+            android:id="@+id/btn_Hint7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="gone"/>
+        <com.vuongthanh.t3h.baitap_buoi7_gamedhbc.CustomButton
+            android:id="@+id/btn_Hint8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="gone"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_Hint_2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <com.vuongthanh.t3h.baitap_buoi7_gamedhbc.CustomButton
+            android:id="@+id/btn_Hint9"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="gone"/>
+        <com.vuongthanh.t3h.baitap_buoi7_gamedhbc.CustomButton
+            android:id="@+id/btn_Hint10"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="gone"/>
+        <com.vuongthanh.t3h.baitap_buoi7_gamedhbc.CustomButton
+            android:id="@+id/btn_Hint11"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="gone"/>
+        <com.vuongthanh.t3h.baitap_buoi7_gamedhbc.CustomButton
+            android:id="@+id/btn_Hint12"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="gone"/>
+        <com.vuongthanh.t3h.baitap_buoi7_gamedhbc.CustomButton
+            android:id="@+id/btn_Hint13"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="gone"/>
+        <com.vuongthanh.t3h.baitap_buoi7_gamedhbc.CustomButton
+            android:id="@+id/btn_Hint14"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="gone"/>
+        <com.vuongthanh.t3h.baitap_buoi7_gamedhbc.CustomButton
+            android:id="@+id/btn_Hint15"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="gone"/>
+        <com.vuongthanh.t3h.baitap_buoi7_gamedhbc.CustomButton
+            android:id="@+id/btn_Hint16"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+</LinearLayout>

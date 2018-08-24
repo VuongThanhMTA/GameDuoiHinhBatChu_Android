@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BaiTap_Buoi7_GameDHBC</string>
+    <string name="btnDA">btnDA1</string>
+    <integer name="btnDA2">2</integer>
+</resources>
